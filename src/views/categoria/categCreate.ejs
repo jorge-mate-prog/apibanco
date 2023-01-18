@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head') %> 
+    </head>
+<body>
+    <div class="container">
+        <header>
+            
+        </header>
+        <main>
+            <h2><%= title %> </h2>
+            <H3>CREAR CATEGORIAS</H3>
+            <form action="create" method="post">
+             <label for="">ID</label>   
+             <div>
+                <p><input type="number" name="id" required></p>
+             </div>
+             <label for="">TIPO</label>   
+             <div>
+                <p><input type="text" name="tipo" required></p>
+             </div>
+             <button tipe="submit">CREAR</button>
+            </form>
+        </main>
+    </div>
+    
+</body>
+</html>

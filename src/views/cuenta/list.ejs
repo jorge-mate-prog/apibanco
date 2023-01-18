@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %> 
+</head>
+<body>
+    <div class="container">
+        <header>
+
+        </header>
+        <main>
+            
+            <% cuentas.forEach(cuenta => { %>
+                <ul>
+                    <li>
+                <p>ID: <%= cuenta.id %> - SALDO: $<%= cuenta.saldo %></p>
+                    </li> 
+                </ul>
+            <% }) %>
+        
+        </main>
+        <footer>
+            <%- include('../partials/footer')  %> 
+        </footer>
+    </div>
+</body>
+</html>

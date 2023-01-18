@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %> 
+</head>
+<body>
+    <div class="container">
+        <header>
+
+        </header>
+        <main>
+            
+            <% categorias.forEach(categoria => { %>
+                <ul>
+                    <li>
+                <p><%= categoria.id %> - <%= categoria.tipo %></p>
+                    </li> 
+                </ul>
+            <% }) %>
+        
+        </main>
+        <footer>
+            <%- include('../partials/footer')  %> 
+        </footer>
+    </div>
+</body>
+</html>
